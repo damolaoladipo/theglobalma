@@ -13,7 +13,7 @@ export default function CallToAction(){
                             <span>Get Started</span>
                         </Link>
                         <Link href="/" className="btn variant-outlined sz-lg">
-                            <span>Book Demo</span>
+                            <span>Join Now</span>
                         </Link>
                     </div>
                 </div>
