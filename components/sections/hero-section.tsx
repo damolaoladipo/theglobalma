@@ -7,7 +7,6 @@ import Image from "next/image";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { TextEffect } from "@/components/ui/text-effect";
 import { Variants } from "motion";
-import { Header } from "@/components/shared/header";
 import { heroData } from "@/_data/hero-data";
 
 const transitionVariants: Variants = {
@@ -31,8 +30,8 @@ const transitionVariants: Variants = {
 export default function HeroSection() {
   return (
     <>
-      <Header />
-      <main className="overflow-hidden">
+
+      <div className="overflow-hidden">
         <div
           aria-hidden
           className="absolute inset-0 isolate hidden opacity-65 contain-strict lg:block"
@@ -227,7 +226,7 @@ export default function HeroSection() {
             </AnimatedGroup>
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }

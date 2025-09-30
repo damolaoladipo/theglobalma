@@ -1,8 +1,8 @@
+import Programs from "@/app/programs/page";
 import CommunitySection from "@/components/content-6";
 import { TabsDemo } from "@/components/dummy";
 import AboutUs from "@/components/sections/about-us";
 import CallToAction from "@/components/sections/cta";
-import Footer from "@/components/sections/footer";
 import HeroSection from "@/components/sections/hero-section";
 
 
@@ -14,12 +14,11 @@ const Home =() =>{
       <HeroSection/>
       
       <TabsDemo/>
-      <AboutUs/>      
+      <AboutUs/>  
+      <Programs/>    
        <CallToAction />
        <CommunitySection/>
-       <Footer/>
-
-
+       
     </main>
   );
 }

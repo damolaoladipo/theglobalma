@@ -43,7 +43,7 @@ const Logo = (data: ILogo) => {
       <div className={clsx(className, "pointer-events-auto")} {...divProps}>
         <Image
           src={imageSrc}
-          alt="Damola Oladipo"
+          alt="The Global MA"
           className="w-36"
           width={100}
           height={100}
