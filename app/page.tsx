@@ -1,6 +1,5 @@
 import CommunitySection from "@/components/content-6";
 import { TabsDemo } from "@/components/dummy";
-import Features from "@/components/features-4";
 import AboutUs from "@/components/sections/about-us";
 import CallToAction from "@/components/sections/cta";
 import Footer from "@/components/sections/footer";
@@ -13,7 +12,7 @@ const Home =() =>{
 
 
       <HeroSection/>
-      <Features/>
+      
       <TabsDemo/>
       <AboutUs/>      
        <CallToAction />

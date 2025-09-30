@@ -2,33 +2,33 @@ import { InstagramIcon, LinkedInIcon, XIcon, YouTubeIcon } from "@/components/sh
 
 export const footerData = {
   brand: {
-    name: "Ogbomoso Innovates",
-    bio: "Ogbomoso Innovates is an initiative of the Ogbomoso State Employment Trust Fund (LSETF).",
-    address: "Address: 16 Billings Way, Oregun, Ikeja Ogbomoso, Nigeria",
+    name: "The Global MA",
+    bio: "The Global MA. Where innovation meets impact. Your journey to greatness begins here!",
+    address: "",
     telephone: "Telephone: +234 (0) 1 700 0945",
-    email: "Email: Ogbomosoinnovates@lsetf.ng",
+    email: "Email: hello@theglobalma.com",
     buitBy: "Made with ❤️ by Damola",
     copyright: ". All rights reserved.",
-    ownedBy: "Ogbomoso Innovates",
+    ownedBy: "The Global MA",
   },
   socialLinks: [
     {
-      href: "https://www.instagram.com/Ogbomosoinnovates",
+      href: "https://www.instagram.com/theglobalma",
       label: "Instagram",
       icon: InstagramIcon,
     },
     {
-      href: "https://www.youtube.com/lsetf",
+      href: "https://www.youtube.com/theglobalma",
       label: "YouTube",
       icon: YouTubeIcon,
     },
     {
-      href: "https://www.linkedin.com/company/Ogbomoso-innovates",
+      href: "https://www.linkedin.com/company/theglobalma",
       label: "LinkedIn",
       icon: LinkedInIcon,
     },
     {
-      href: "https://x.com/Ogbomosoinnovates",
+      href: "https://x.com/theglobalma",
       label: "X",
       icon: XIcon,
     },
@@ -36,9 +36,9 @@ export const footerData = {
     programs: {
     group: "Programs",
     items: [
-      { href: "/programs#workspace-voucher", label: "Workspace Vouchers" },
-      { href: "/programs#talent-development", label: "Talent Development" },
-      { href: "/programs#grant-for-innovators", label: "Grant for Innovators" },
+      { href: "/programs#workspace-voucher", label: "Project AINA" },
+      { href: "/programs#talent-development", label: "Bridgit Accelerator" },
+      { href: "/programs#grant-for-innovators", label: "For Innovators" },
     ],
   },
   about: {
