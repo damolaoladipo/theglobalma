@@ -1,21 +1,21 @@
 export const heroData = {
-  heading: "Empowering the next generation of innovators in Lagos.",
+  heading: "Technology innovation beyond borders.",
+  badge: "Introducing the Bridgit Accelerator",
   subheading:
-    "We support tech founders, and Startups by facilitating access to high-quality workspaces and infrastructure, learning, incubation, investor and peer networks.",
+    "We are a hub for entrepreneurship, mentorship, and impact-driven projects—building bold ideas and transforming communities.",
 
   mockup: {
     light: {
-      src: "/images/hero-image.png",
+      src: "/items/innovation.png",
       alt: "innovation image",
-      width: 1248,
-      height: 765,
-
+      width: 2700,
+      height: 1440,
     },
     dark: {
-      src: "/images/hero-image.png",
+      src: "/items/innovation.png",
       alt: "innovation image",
-      width: 1248,
-      height: 765,
+      width: 2700,
+      height: 1440,
     },
   },
 
@@ -33,8 +33,6 @@ export const heroData = {
     icon: "Arrow",
   },
   partners: {
-    text: "Meet our partners"
-  }
+    text: "Meet our partners",
+  },
 };
-
-

@@ -1,13 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, ChevronRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { TextEffect } from "@/components/ui/text-effect";
 import { Variants } from "motion";
-import { Header } from "@/components/shared/header";
 import { heroData } from "@/_data/hero-data";
 
 const transitionVariants: Variants = {
@@ -31,8 +30,8 @@ const transitionVariants: Variants = {
 export default function HeroSection() {
   return (
     <>
-      <Header />
-      <main className="overflow-hidden">
+
+      <div className="overflow-hidden">
         <div
           aria-hidden
           className="absolute inset-0 isolate hidden opacity-65 contain-strict lg:block"
@@ -99,7 +98,7 @@ export default function HeroSection() {
                     className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                   >
                     <span className="text-foreground text-sm">
-                      Introducing the Bridgit Accelerator
+                      {heroData.badge}
                     </span>
                     <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
@@ -122,7 +121,7 @@ export default function HeroSection() {
                   as="h1"
                   className="mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]"
                 >
-                  Modern Solutions for Customer Engagement
+                  {heroData.heading}
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -132,8 +131,7 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  Highly customizable components for building modern websites
-                  and applications that look and feel the way you mean it.
+                  {heroData.subheading}
                 </TextEffect>
 
                 <AnimatedGroup
@@ -211,38 +209,24 @@ export default function HeroSection() {
                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                   <Image
                     className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
-                    src="/blocks/img.png"
-                    alt="app screen"
-                    width="2700"
-                    height="1440"
+                    src={heroData.mockup.light.src}
+                    alt={heroData.mockup.light.alt}
+                    width={heroData.mockup.light.width}
+                    height={heroData.mockup.light.height}
                   />
                   <Image
                     className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden"
-                    src="/blocks/img.png"
-                    alt="app screen"
-                    width="2700"
-                    height="1440"
+                    src={heroData.mockup.dark.src}
+                    alt={heroData.mockup.dark.alt}
+                    width={heroData.mockup.dark.width}
+                    height={heroData.mockup.dark.height}
                   />
                 </div>
               </div>
             </AnimatedGroup>
           </div>
         </section>
-        <section className="bg-background pb-16 pt-16 md:pb-32">
-          <div className="group relative m-auto max-w-5xl px-6">
-            <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
-              <Link
-                href="/"
-                className="block text-sm duration-150 hover:opacity-75"
-              >
-                <span> Meet Our Customers</span>
-
-                <ChevronRight className="ml-1 inline-block size-3" />
-              </Link>
-            </div>
-          </div>
-        </section>
-      </main>
+      </div>
     </>
   );
 }

@@ -1,6 +1,6 @@
 export const Navigation = [
   {
-    label: "About Us",
+    label: "About",
     href: "/about",
     dropdown: [
       {
@@ -40,26 +40,11 @@ export const Navigation = [
     ],
   },
    {
-    label: "FAQ",
-    href: "/faq",
+    label: "Projects",
+    href: "/projects",
   },
   {
-    label: "Media Centre",
-    href: "/media",
-    dropdown: [
-      {
-        label: "News",
-        href: "/media/news",
-      },
-      {
-        label: "Gallery",
-        href: "/media/gallery",
-      },
-    ],
-  },
- 
-  {
-    label: "Contact Us",
+    label: "Contact",
     href: "/contact",
   },
 ];

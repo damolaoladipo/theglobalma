@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "theglobalma - learn and grow by doing",
+  name: "theglobalma - the possibilities are endless",
   title: "theglobalma",
   url: "https://www.theglobalma.com",
-  getStartedUrl: "https://www.theglobalma.com/login",
+  getStartedUrl: "https://www.theglobalma.com",
   ogImage: "/blocks/og-image.png",
   products: {
     name: "lens",
@@ -20,7 +20,7 @@ export const siteConfig = {
     email: "mailto:hello@theglobalma.com",
   },
   contact: {
-    telephone: "+2348170848057",
+    telephone: "+15873707614",
     email: "hello@theglobalma",
   },
 };
