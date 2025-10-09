@@ -39,10 +39,6 @@ export const Navigation = [
       },
     ],
   },
-   {
-    label: "Projects",
-    href: "/projects",
-  },
   {
     label: "Contact",
     href: "/contact",
