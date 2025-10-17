@@ -4,6 +4,7 @@ import { TabsDemo } from "@/components/dummy";
 import AboutUs from "@/components/sections/about-us";
 import CallToAction from "@/components/sections/cta";
 import HeroSection from "@/components/sections/hero-section";
+import ImpactHighlights from "@/components/sections/imapact";
 
 
 const Home =() =>{
@@ -12,6 +13,8 @@ const Home =() =>{
 
 
       <HeroSection/>
+
+      <ImpactHighlights/>
       
       <TabsDemo/>
       <AboutUs/>  

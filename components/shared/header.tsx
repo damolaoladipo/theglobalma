@@ -9,6 +9,7 @@ import { Navigation } from "@/_data/nav-bar";
 import ThemeToggle from "@/components/shared/theme-toggle";
 import { Button } from "@/components/ui/button";
 
+
 export const Header = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
@@ -83,19 +84,8 @@ export const Header = () => {
                 </ul>
               </div>
 
-              <div className=" w-full hidden md:block flex-col items-center justify-center space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+              <div className=" w-full md:w-fit flex flex-col items-center justify-center space-y-3 sm:flex-row sm:gap-3 sm:space-y-0">
                 <ThemeToggle />
-
-                <Button
-                  asChild
-                  variant="outline"
-                  size="sm"
-                  className={cn("lg:hidden")}
-                >
-                  <Link href="#">
-                    <span>Login</span>
-                  </Link>
-                </Button>
                 <Button
                   asChild
                   size="sm"

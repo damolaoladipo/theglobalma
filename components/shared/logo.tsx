@@ -44,7 +44,7 @@ const Logo = (data: ILogo) => {
         <Image
           src={imageSrc}
           alt="The Global MA"
-          className="w-36"
+          className="w-36 dark:invert"
           width={100}
           height={100}
           priority
