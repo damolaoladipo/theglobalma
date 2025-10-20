@@ -22,7 +22,7 @@ const iconMap = {
 
 export default function ImpactHighlights() {
     return (
-        <section className="py-12 md:py-20 bg-gradient-to-b from-background to-muted/20">
+        <section className="py-12 md:py-20 bg-neutral-100 dark:bg-neutral-900 from-background to-muted/20">
             <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
                 <div className="relative z-10 mx-auto max-w-3xl space-y-6 text-center md:space-y-8">
                     <h2 className="text-balance text-4xl font-medium lg:text-5xl bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">

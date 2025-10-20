@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function AboutUs() {
   return (
-    <section className="bg-white py-16 pt-20 md:py-32 dark:bg-[#171717]">
+    <section className="bg-neutral-100 py-16 pt-20 md:py-32 dark:bg-[#171717]">
       <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-12">
      
 
@@ -61,14 +61,14 @@ export default function AboutUs() {
           </div>
         </div>
 
-           <img
+           {/* <img
           className="rounded-(--radius) grayscale"
           src={AboutUsData.image.src}
           alt={AboutUsData.image.alt}
           height={AboutUsData.image.height}
           width={AboutUsData.image.width}
           loading="lazy"
-        />
+        /> */}
         
       </div>
     </section>

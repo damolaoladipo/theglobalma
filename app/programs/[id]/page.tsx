@@ -150,7 +150,7 @@ function ProgramComponent({ params }: { params: Promise<{ id: string }> }) {
 
         {/* Program image */}
         <Image
-          className="rounded-(--radius) grayscale"
+          className="rounded-lg grayscale"
           src={program.image.src}
           alt={program.image.alt}
           width={program.image.width}

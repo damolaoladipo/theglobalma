@@ -10,7 +10,7 @@ const LogoContainer = ({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) => {
-  return <div className={clsx(className, "h-48 w-48 pr-10")} {...props} />;
+  return <div className={clsx(className, "h-12 w-auto")} {...props} />;
 }
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -44,9 +44,9 @@ const Logo = (data: ILogo) => {
         <Image
           src={imageSrc}
           alt="The Global MA"
-          className="w-36 dark:invert"
-          width={100}
-          height={100}
+          className="h-10 w-auto dark:invert"
+          width={144}
+          height={48}
           priority
         />
       </div>

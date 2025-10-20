@@ -1,19 +1,17 @@
 export const heroData = {
-  heading: "innovation Beyond Borders...",
-  badge: "Introducing the Bridgit Accelerator",
-  subheading:
-    "Your hub for entrepreneurship, mentorship, and impact-driven projects—building bold ideas and transforming communities.",
-
+  heading: "Innovation Beyond Borders",
+  badge: "Bridgit Accelerator",
+    subheading: "Your hub for entrepreneurship, mentorship, and impact-driven projects—building bold ideas and transforming communities.",
   mockup: {
     light: {
-      src: "/items/innovation.png",
-      alt: "innovation image",
+      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=2700&h=1440&fit=crop",
+      alt: "Canadian landscape with diverse communities working together on technology and innovation projects",
       width: 2700,
       height: 1440,
     },
     dark: {
-      src: "/items/innovation.png",
-      alt: "innovation image",
+      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=2700&h=1440&fit=crop",
+      alt: "Canadian landscape with diverse communities working together on technology and innovation projects",
       width: 2700,
       height: 1440,
     },

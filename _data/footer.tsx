@@ -5,7 +5,7 @@ export const footerData = {
     name: "The Global MA",
     bio: "The Global MA. Where innovation meets impact. Your journey to greatness begins here!",
     address: "",
-    telephone: "Telephone: +234 (0) 1 700 0945",
+    telephone: "",
     email: "Email: hello@theglobalma.com",
     buitBy: "Made with ❤️ by Damola",
     copyright: ". All rights reserved.",
