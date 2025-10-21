@@ -204,17 +204,17 @@ export default function HeroSection() {
                 ...transitionVariants,
               }}
             >
-              <div className="dark:mask-b-from-55% relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
-                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
+              <div className="dark:mask-b-from-55% relative -mr-4 sm:-mr-8 md:-mr-16 lg:-mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
+                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-2 sm:p-3 md:p-4 shadow-lg shadow-zinc-950/15 ring-1">
                   <Image
-                    className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
+                    className="bg-background aspect-4/3 sm:aspect-15/8 relative hidden rounded-2xl dark:block w-full h-auto object-cover"
                     src={heroData.mockup.light.src}
                     alt={heroData.mockup.light.alt}
                     width={heroData.mockup.light.width}
                     height={heroData.mockup.light.height}
                   />
                   <Image
-                    className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden"
+                    className="z-2 border-border/25 aspect-4/3 sm:aspect-15/8 relative rounded-2xl border dark:hidden w-full h-auto object-cover"
                     src={heroData.mockup.dark.src}
                     alt={heroData.mockup.dark.alt}
                     width={heroData.mockup.dark.width}
