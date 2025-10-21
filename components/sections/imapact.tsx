@@ -34,7 +34,7 @@ export default function ImpactHighlights() {
                 </div>
 
                 <div className="relative mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {ImpactHighlightsData.map((highlight: ImpactHighlight, index: number) => {
+                    {ImpactHighlightsData.map((highlight: ImpactHighlight, _index: number) => {
                         const IconComponent = iconMap[highlight.icon as keyof typeof iconMap]
                         return (
                             <div 

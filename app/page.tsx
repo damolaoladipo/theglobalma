@@ -5,23 +5,25 @@ import AboutUs from "@/components/sections/about-us";
 import CallToAction from "@/components/sections/cta";
 import HeroSection from "@/components/sections/hero-section";
 import ImpactHighlights from "@/components/sections/imapact";
+import Partners from "@/components/sections/partners";
+import UpcomingEvents from "@/components/upcoming";
 
 
-const Home =() =>{
+const Home = () => {
   return (
     <main className="min-h-screen w-full overflow-hidden bg-green text-foreground">
 
 
-      <HeroSection/>
+      <HeroSection />
+      <Partners />
+      <UpcomingEvents />
+      <ImpactHighlights />
+      <TabsDemo />
+      <AboutUs />
+      <Programs />
+      <CallToAction />
+      <CommunitySection />
 
-      <ImpactHighlights/>
-      
-      <TabsDemo/>
-      <AboutUs/>  
-      <Programs/>    
-       <CallToAction />
-       <CommunitySection/>
-       
     </main>
   );
 }

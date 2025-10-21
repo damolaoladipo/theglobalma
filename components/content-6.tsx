@@ -6,9 +6,9 @@ export default function CommunitySection() {
             <div className="mx-auto max-w-5xl px-6">
                 <div className="text-center">
                     <h2 className="text-3xl font-semibold">
-                        Built by the Community <br /> for the Community
+                        Built for technology Enthusiasts <br /> for Global Impact
                     </h2>
-                    <p className="mt-6">Harum quae dolore orrupti aut temporibus ariatur.</p>
+                    <p className="mt-6">Join a vibrant community of innovators, entrepreneurs, and changemakers who are transforming lives and building the future of technology across Canada and beyond.</p>
                 </div>
                 <div className="mx-auto mt-12 flex max-w-lg flex-wrap justify-center gap-3">
                     <Link href="https://github.com/meschacirung" target="_blank" title="Méschac Irung" className="size-16 rounded-full border *:size-full *:rounded-full *:object-cover">

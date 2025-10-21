@@ -83,7 +83,7 @@ export function TabsDemo() {
 const DummyContent = () => {
   return (
     <img
-      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&h=1000&fit=crop"
+      src="items/talk.png"
       alt="Canadian communities and impact initiatives"
       width="1000"
       height="1000"

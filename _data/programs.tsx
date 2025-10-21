@@ -146,57 +146,71 @@ export const ProgramsData: Program[] = [
     ],
   },
   {
-    id: "tech-innovation-hub",
-    heading: "Tech Innovation Hub",
+    id: "instructional-design-bootcamp",
+    heading: "Instructional Design Beginner Bootcamp",
     subheading:
-      "A comprehensive innovation ecosystem that bridges the gap between academic research and real-world applications. The Tech Innovation Hub provides cutting-edge resources, mentorship, and collaborative spaces for emerging technologies including AI, blockchain, IoT, and quantum computing. We foster cross-disciplinary collaboration between researchers, entrepreneurs, and industry leaders to accelerate breakthrough innovations.",
+      "The ID Beginner Bootcamp is a hands-on program designed to kickstart your journey into the exciting world of instructional design! Whether you're new to the field or looking to enhance your skills, this program is perfect for beginners eager to dive into instructional design. Get a handle of the full Instructional Design process and learn how to create high-impact eLearning courses.",
     image: {
-      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1400&h=1400&fit=crop",
-      alt: "Tech Innovation Hub research facility with AI labs, blockchain development stations, and quantum computing equipment",
-      height: 1400,
-      width: 1400,
+      src: "/items/instruct.png",
+      alt: "Instructional Design Beginner Bootcamp - hands-on learning program for aspiring instructional designers",
+      height: 612,
+      width: 1206,
     },
     button1: {
       id: "01",
-      href: "/apply-now",
-      text: "Join Innovation Hub",
+      href: "https://www.thearkademy.com/idbeginnerbootcamp",
+      text: "Become an Instructional Designer",
       variant: "default" as const,
     },
     button2: {
       id: "02",
       href: "/download",
-      text: "View Research Papers",
+      text: "Download Program Guide",
       variant: "glow" as const,
       icon: "Arrow",
     },
     features: [
       {
-        id: "ai-research-lab",
-        title: "AI Research Lab",
+        id: "full-id-process",
+        title: "Full ID Process",
         description:
-          "State-of-the-art AI research facilities with access to high-performance computing, machine learning frameworks, and datasets for cutting-edge research in computer vision, NLP, and autonomous systems.",
-        icon: "Brain",
+          "Get a handle of the full Instructional Design process with comprehensive training covering analysis, design, development, implementation, and evaluation phases.",
+        icon: "BookOpen",
       },
       {
-        id: "blockchain-workshop",
-        title: "Blockchain Workshop",
+        id: "hands-on-practice",
+        title: "Hands-on Practice",
         description:
-          "Hands-on blockchain development workshops covering smart contracts, DeFi protocols, NFT creation, and Web3 integration for building the next generation of decentralized applications.",
-        icon: "Link",
+          "Practice with scenarios, assessments and assignments that mirror real-world instructional design challenges and workplace situations.",
+        icon: "Target",
       },
       {
-        id: "iot-prototyping",
-        title: "IoT Prototyping",
+        id: "elearning-creation",
+        title: "eLearning Course Creation",
         description:
-          "Complete IoT development environment with sensors, microcontrollers, and cloud platforms for building connected devices, smart city solutions, and industrial automation systems.",
-        icon: "Wifi",
+          "Learn how to create a high-impact eLearning course using industry-standard tools and methodologies for maximum learner engagement and retention.",
+        icon: "Monitor",
       },
       {
-        id: "quantum-computing",
-        title: "Quantum Computing",
+        id: "expert-guidance",
+        title: "Expert Guidance",
         description:
-          "Access to quantum computing resources and educational programs exploring quantum algorithms, quantum machine learning, and quantum cryptography for next-generation computing solutions.",
-        icon: "Atom",
+          "Get step-by-step expert guidance & personalized feedback from experienced instructional designers throughout your learning journey.",
+        icon: "Users",
+      },
+      {
+        id: "portfolio-building",
+        title: "Portfolio Development",
+        description:
+          "Create an effective Instructional Design portfolio showcasing your skills and projects to potential employers and clients.",
+        icon: "Briefcase",
+      },
+      {
+        id: "continuous-support",
+        title: "Instructional Design Lab",
+        description:
+          "Join the Instructional Design Lab for continuous support, networking opportunities, and ongoing professional development.",
+        icon: "Lightbulb",
       },
     ],
   },
@@ -285,14 +299,14 @@ export const ProgramsSection = {
       },
     },
     {
-      id: "tech-innovation-hub",
-      title: "Tech Innovation Hub",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1400&h=1400&fit=crop",
+      id: "instructional-design-bootcamp",
+      title: "Instructional Design Beginner Bootcamp",
+      image: "/items/instruct.png",
       description:
-        "A comprehensive innovation ecosystem that bridges the gap between academic research and real-world applications. The Tech Innovation Hub provides cutting-edge resources, mentorship, and collaborative spaces for emerging technologies including AI, blockchain, IoT, and quantum computing.",
+        "The ID Beginner Bootcamp is a hands-on program designed to kickstart your journey into the exciting world of instructional design! Whether you're new to the field or looking to enhance your skills, this program is perfect for beginners eager to dive into instructional design.",
       cta: {
-        label: "Join Hub",
-        link: "/programs/tech-innovation-hub",
+        label: "Join Bootcamp",
+        link: "https://www.thearkademy.com/idbeginnerbootcamp",
       },
     },
     {

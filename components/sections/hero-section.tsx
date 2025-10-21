@@ -171,13 +171,13 @@ export default function HeroSection() {
 
                   <div className="group flex flex-1 rounded-[calc(var(--radius-sm)+0.125rem)]">
                     <Button
-                      key={heroData.button1.id}
+                      key={heroData.button2.id}
                       asChild
                       size="lg"
                       variant="outline"
                       className="bg-background relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-5 text-base transition-colors duration-300 hover:text-white"
                     >
-                      <a href={heroData.button1.href}>
+                      <a href={heroData.button2.href}>
                         <span className="relative z-10 flex items-center gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
                           {heroData.button2.text}
 
@@ -205,7 +205,7 @@ export default function HeroSection() {
                 ...transitionVariants,
               }}
             >
-              <div className="mask-b-from-55% relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
+              <div className="dark:mask-b-from-55% relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                   <Image
                     className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"

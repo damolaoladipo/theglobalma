@@ -44,9 +44,9 @@ const Logo = (data: ILogo) => {
         <Image
           src={imageSrc}
           alt="The Global MA"
-          className="h-10 w-auto dark:invert"
-          width={144}
-          height={48}
+          className="h-8 w-auto dark:invert"
+          width={100}
+          height={40}
           priority
         />
       </div>

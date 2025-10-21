@@ -36,16 +36,16 @@ export const footerData = {
     programs: {
     group: "Programs",
     items: [
-      { href: "/programs#workspace-voucher", label: "Project AINA" },
-      { href: "/programs#talent-development", label: "Bridgit Accelerator" },
-      { href: "/programs#grant-for-innovators", label: "For Innovators" },
+      { href: "/programs/aina", label: "Project AINA" },
+      { href: "/programs/bridgit-accelerator", label: "Bridgit Accelerator" },
+      { href: "/programs/instructional-design-bootcamp", label: "Instructional Design" },
     ],
   },
   about: {
     group: "About",
     items: [
       { href: "/about-us", label: "About Us" },
-      { href: "/press", label: "Press" },
+      { href: "/programs", label: "Programs" },
       { href: "/contact", label: "Contact" },
     ],
   }

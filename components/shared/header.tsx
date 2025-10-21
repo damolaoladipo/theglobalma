@@ -84,15 +84,15 @@ export const Header = () => {
                 </ul>
               </div>
 
-              <div className=" w-full md:w-fit flex flex-col items-center justify-center space-y-3 sm:flex-row sm:gap-3 sm:space-y-0">
+              <div className=" w-full md:w-fit flex flex-col items-center justify-center space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 hidden sm:flex">
                 <ThemeToggle />
                 <Button
                   asChild
                   size="sm"
                   className={cn(scrolled && "lg:hidden")}
                 >
-                  <Link href="#">
-                    <span>Sign Up</span>
+                  <Link href="/contact">
+                    <span>Contact us</span>
                   </Link>
                 </Button>
                 <Button
@@ -100,8 +100,8 @@ export const Header = () => {
                   size="sm"
                   className={cn(scrolled ? "lg:inline-flex" : "hidden")}
                 >
-                  <Link href="#">
-                    <span>Get Started</span>
+                  <Link href="/contact">
+                    <span>Get In Touch</span>
                   </Link>
                 </Button>
               </div>

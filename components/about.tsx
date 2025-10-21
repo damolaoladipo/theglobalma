@@ -77,7 +77,7 @@ export default function About() {
                 </blockquote>
 
                 <Button variant="default" size="lg" className="mt-4">
-                  Start Learning Now
+                  About
                 </Button>
               </div>
             </div>

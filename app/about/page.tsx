@@ -1,7 +1,7 @@
 import CallToAction from "@/components/sections/cta";
-import { Button } from "@/components/ui/button";
-import { Star, Users, Award, ThumbsUp } from "lucide-react";
+import { Users, MapPin, Target, Heart } from "lucide-react";
 import Image from "next/image";
+import { AboutUsData } from "@/_data/about-us";
 
 export default function About() {
   return (
@@ -12,8 +12,8 @@ export default function About() {
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden rounded-lg">
               <Image
-                src="/items/innovation.png"
-                alt="Students learning technology online"
+                src={AboutUsData.image.src}
+                alt={AboutUsData.image.alt}
                 className="rounded-lg object-cover"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -24,20 +24,14 @@ export default function About() {
           {/* Right side with content */}
           <div className="flex flex-col justify-center space-y-6">
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              About Us
+              {AboutUsData.heading}
             </h2>
             <div className="space-y-4">
               <p className="text-base text-muted-foreground sm:text-lg">
-                We started in 2015 with one mission — to make world-class
-                technology education accessible to everyone. Our platform helps
-                learners gain real skills in software engineering, design, data,
-                and AI through hands-on projects, mentorship, and community
-                support. 
+                {AboutUsData.subheading}
               </p>
               <p className="text-base text-muted-foreground sm:text-lg">
-                Over the years, we’ve empowered thousands of learners to build
-                tech careers, launch startups, and contribute to the global
-                developer ecosystem.
+                {AboutUsData.description}
               </p>
 
               <div className="rounded-lg bg-accent p-6">
@@ -46,44 +40,50 @@ export default function About() {
                   <div className="flex items-center space-x-2">
                     <Users className="size-5 text-primary" />
                     <span className="text-sm font-medium">
-                      50,000+ Learners
+                      {AboutUsData.stats.reach}
                     </span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Star className="size-5 text-primary" />
-                    <span className="text-sm font-medium">4.9/5 Rated</span>
+                    <Target className="size-5 text-primary" />
+                    <span className="text-sm font-medium">{AboutUsData.stats.projects}</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Award className="size-5 text-primary" />
-                    <span className="text-sm font-medium">Top EdTech Award</span>
+                    <MapPin className="size-5 text-primary" />
+                    <span className="text-sm font-medium">{AboutUsData.stats.communities}</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <ThumbsUp className="size-5 text-primary" />
+                    <Heart className="size-5 text-primary" />
                     <span className="text-sm font-medium">
-                      97% Satisfaction
+                      {AboutUsData.stats.mentorship}
                     </span>
                   </div>
+                </div>
+
+                {/* Contact Info */}
+                <div className="py-4 border-t border-border">
+                  <p className="text-sm text-muted-foreground mb-2">
+                    <strong>Email:</strong> {AboutUsData.contact.email}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {AboutUsData.contact.tagline}
+                  </p>
                 </div>
 
                 {/* Social Proof */}
                 <blockquote className="border-l-2 border-primary pl-4">
                   <p className="text-sm italic text-muted-foreground sm:text-base">
-                    This platform completely changed my career. I went from
-                    learning to code at home to landing a full-time role as a
-                    software engineer in less than a year!
+                    {AboutUsData.testimonial.quote}
                   </p>
                   <footer className="mt-2 text-sm font-medium text-foreground">
-                    — Alex Chen, Graduate
+                    — {AboutUsData.testimonial.author}, {AboutUsData.testimonial.role}
                   </footer>
                 </blockquote>
 
-                <Button variant="default" size="lg" className="mt-4">
-                  Start Learning Now
-                </Button>
               </div>
             </div>
           </div>
         </div>
+
       </div>
 
       <CallToAction />

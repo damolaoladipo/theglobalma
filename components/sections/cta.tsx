@@ -13,7 +13,7 @@ export default function CallToAction(){
                 {/* The text-center class already handles horizontal centering for block elements and text. */}
                 <div className="text-center"> 
                     <h2 className="text-title text-balance text-4xl font-semibold lg:text-5xl">Got a problem worth solving?</h2>
-                    <p className="text-body mt-4 lg:px-30">I find fun in solving problems — the kind that immerse me so deeply I lose track of time. That’s how I’ve built scalable banking platforms, cross-border payment systems, and enterprise-grade solutions used by millions.</p>
+                    <p className="text-body mt-4 lg:px-30">We&apos;re building a bridge from curiosity to innovation, from young potential real-world impact.</p>
 
                     {/* This container ensures the buttons (or button) are centered */}
                     <div className="mt-12 flex items-center justify-center"> 
