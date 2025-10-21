@@ -206,14 +206,7 @@ export default function HeroSection() {
               }}
             >
               <div className="dark:mask-b-from-55% relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
-                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
-                  <Image
-                    className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
-                    src={heroData.mockup.light.src}
-                    alt={heroData.mockup.light.alt}
-                    width={heroData.mockup.light.width}
-                    height={heroData.mockup.light.height}
-                  />
+                {/* <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                   <Image
                     className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden"
                     src={heroData.mockup.dark.src}
@@ -221,7 +214,7 @@ export default function HeroSection() {
                     width={heroData.mockup.dark.width}
                     height={heroData.mockup.dark.height}
                   />
-                </div>
+                </div> */}
               </div>
             </AnimatedGroup>
           </div>
