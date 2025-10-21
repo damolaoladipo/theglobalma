@@ -3,7 +3,6 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { TextEffect } from "@/components/ui/text-effect";
 import { Variants } from "motion";
@@ -42,7 +41,7 @@ export default function HeroSection() {
         </div>
         <section>
           <div className="relative pt-24 md:pt-36 mb-10">
-            <AnimatedGroup
+            {/* <AnimatedGroup
               variants={{
                 container: {
                   visible: {
@@ -70,20 +69,20 @@ export default function HeroSection() {
               className="mask-b-from-35% mask-b-to-90% absolute inset-0 top-56 -z-20 lg:top-32"
             >
               <Image
-                src="/blocks/im.png"
+                src="/"
                 alt="background"
                 className="hidden size-full dark:block"
                 width="3276"
                 height="4095"
               />
               <Image
-                src="/blocks/im.png"
+                src="/"
                 alt="background"
                 className="z-2 aspect-15/8 relative size-full dark:hidden"
                 width="3276"
                 height="4095"
               />
-            </AnimatedGroup>
+            </AnimatedGroup> */}
 
             <div
               aria-hidden
@@ -206,7 +205,14 @@ export default function HeroSection() {
               }}
             >
               <div className="dark:mask-b-from-55% relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
-                {/* <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
+                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
+                  <Image
+                    className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
+                    src={heroData.mockup.light.src}
+                    alt={heroData.mockup.light.alt}
+                    width={heroData.mockup.light.width}
+                    height={heroData.mockup.light.height}
+                  />
                   <Image
                     className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden"
                     src={heroData.mockup.dark.src}
@@ -214,7 +220,7 @@ export default function HeroSection() {
                     width={heroData.mockup.dark.width}
                     height={heroData.mockup.dark.height}
                   />
-                </div> */}
+                </div>
               </div>
             </AnimatedGroup>
           </div>
