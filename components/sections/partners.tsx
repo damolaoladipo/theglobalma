@@ -17,10 +17,10 @@ const Partners = () => {
                     </Link>
                 </div>
 
-                <div className="group-hover:blur-xs mx-auto mt-8 grid max-w-6xl grid-cols-3 md:grid-cols-3 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
+                <div className="group-hover:blur-xs mx-auto mt-8 grid max-w-6xl grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6 transition-all duration-500 group-hover:opacity-50 sm:gap-x-12 sm:gap-y-8 md:gap-x-16 md:gap-y-14">
                     <div className="flex">
                         <img
-                            className="mx-auto h-20 w-[500px] dark:invert"
+                            className="mx-auto h-16 w-auto max-w-[200px] sm:h-20 sm:max-w-[300px] md:max-w-[400px] dark:invert"
                             src="blocks/the-ark.svg"
                             alt="Nvidia Logo"
                             height="200"
@@ -30,7 +30,7 @@ const Partners = () => {
 
                     <div className="flex">
                         <img
-                            className="mx-auto h-20 w-[500px] dark:invert"
+                            className="mx-auto h-16 w-auto max-w-[200px] sm:h-20 sm:max-w-[300px] md:max-w-[400px] dark:invert"
                             src="blocks/alberta.svg"
                             alt="Laravel Logo"
                             height="200"
@@ -40,7 +40,7 @@ const Partners = () => {
 
                     <div className="flex">
                         <img
-                            className="mx-auto h-20 w-[500px] dark:invert"
+                            className="mx-auto h-16 w-auto max-w-[200px] sm:h-20 sm:max-w-[300px] md:max-w-[400px] dark:invert"
                             src="blocks/consulting.svg"
                             alt="Column Logo"
                             height="200"
@@ -49,7 +49,7 @@ const Partners = () => {
                     </div>
                     <div className="flex">
                         <img
-                            className="mx-auto h-20 w-[500px] dark:invert"
+                            className="mx-auto h-16 w-auto max-w-[200px] sm:h-20 sm:max-w-[300px] md:max-w-[400px] dark:invert"
                             src="blocks/crown.svg"
                             alt="GitHub Logo"
                             height="200"
@@ -58,7 +58,7 @@ const Partners = () => {
                     </div>
                     <div className="flex">
                         <img
-                            className="mx-auto h-20 w-[500px] dark:invert"
+                            className="mx-auto h-16 w-auto max-w-[200px] sm:h-20 sm:max-w-[300px] md:max-w-[400px] dark:invert"
                             src="blocks/i-techies.svg"
                             alt="Nike Logo"
                             height="200"
@@ -67,7 +67,7 @@ const Partners = () => {
                     </div>
                     <div className="flex">
                         <img
-                            className="mx-auto h-20 w-[500px] dark:invert"
+                            className="mx-auto h-16 w-auto max-w-[200px] sm:h-20 sm:max-w-[300px] md:max-w-[400px] dark:invert"
                             src="blocks/bipoc.svg"
                             alt="Lemon Squeezy Logo"
                             height="200"

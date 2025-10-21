@@ -146,7 +146,7 @@ export default function HeroSection() {
                     },
                     ...transitionVariants,
                   }}
-                  className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
+                  className="mt-12 flex flex-row items-center justify-center gap-2 sm:gap-3 md:gap-2"
                 >
                   <div
                     key={heroData.button1.id}
@@ -155,13 +155,13 @@ export default function HeroSection() {
                     <Button
                       asChild
                       size="lg"
-                      className="relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-5 text-base transition-colors duration-300 hover:text-white"
+                      className="relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-3 sm:px-4 md:px-5 text-xs sm:text-sm md:text-base transition-colors duration-300 hover:text-white"
                     >
                       <a href={heroData.button1.href}>
-                        <span className="relative z-10 flex items-center gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
+                        <span className="relative z-10 flex items-center gap-1 sm:gap-2 md:gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
                           {heroData.button1.text}
 
-                          <ArrowUpRight className="transition-transform duration-300 group-hover:rotate-45" />
+                          <ArrowUpRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:rotate-45" />
                         </span>
 
                         <div className="absolute inset-y-0 left-0 h-full w-full -translate-x-full transition-transform duration-300 group-hover:translate-x-0  bg-gradient-to-r from-[var(--color-green)] to-[var(--color-orange)]"></div>
@@ -175,13 +175,13 @@ export default function HeroSection() {
                       asChild
                       size="lg"
                       variant="outline"
-                      className="bg-background relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-5 text-base transition-colors duration-300 hover:text-white"
+                      className="bg-background relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-3 sm:px-4 md:px-5 text-xs sm:text-sm md:text-base transition-colors duration-300 hover:text-white"
                     >
                       <a href={heroData.button2.href}>
-                        <span className="relative z-10 flex items-center gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
+                        <span className="relative z-10 flex items-center gap-1 sm:gap-2 md:gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
                           {heroData.button2.text}
 
-                          <ArrowUpRight className="transition-transform duration-300 group-hover:rotate-45" />
+                          <ArrowUpRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:rotate-45" />
                         </span>
 
                         <div className="absolute inset-y-0 left-0 h-full w-full -translate-x-full transition-transform duration-300 group-hover:translate-x-0  bg-gradient-to-r from-[var(--color-green)] to-[var(--color-orange)]"></div>
