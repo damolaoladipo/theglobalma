@@ -1,6 +1,6 @@
 import Programs from "@/app/programs/page";
 import CommunitySection from "@/components/content-6";
-import { TabsDemo } from "@/components/dummy";
+// import { TabsDemo } from "@/components/dummy";
 import AboutUs from "@/components/sections/about-us";
 import CallToAction from "@/components/sections/cta";
 import HeroSection from "@/components/sections/hero-section";
@@ -18,7 +18,7 @@ const Home = () => {
       <Partners />
       <UpcomingEvents />
       <ImpactHighlights />
-      <TabsDemo />
+      {/* <TabsDemo /> */}
       <AboutUs />
       <Programs />
       <CallToAction />

@@ -2,6 +2,8 @@ import CallToAction from "@/components/sections/cta";
 import { Users, MapPin, Target, Heart } from "lucide-react";
 import Image from "next/image";
 import { AboutUsData } from "@/_data/about-us";
+import BoardSection from "@/components/sections/board";
+import ValuesSection from "@/components/sections/values";
 
 export default function About() {
   return (
@@ -85,6 +87,10 @@ export default function About() {
         </div>
 
       </div>
+
+      <ValuesSection/>
+
+      <BoardSection/>
 
       <CallToAction />
     </>

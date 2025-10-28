@@ -5,13 +5,27 @@ export const heroData = {
   mockup: {
     light: {
       src: "/items/young.png",
-      alt: "Canadian landscape with diverse communities working together on technology and innovation projects",
+      alt: "hero image",
       width: 2700,
       height: 1440,
     },
     dark: {
       src: "/items/young.png",
-      alt: "Canadian landscape with diverse communities working together on technology and innovation projects",
+      alt: "hero image",
+      width: 2700,
+      height: 1440,
+    },
+  },
+  bgImgae: {
+    light: {
+      src: "/blocks/bg-image.png",
+      alt: "bg",
+      width: 2700,
+      height: 1440,
+    },
+    dark: {
+      src: "/blocks/bg-image.png",
+      alt: "bg",
       width: 2700,
       height: 1440,
     },

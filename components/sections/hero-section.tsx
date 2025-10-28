@@ -41,7 +41,7 @@ export default function HeroSection() {
         </div>
         <section>
           <div className="relative pt-24 md:pt-36 mb-10">
-            {/* <AnimatedGroup
+            <AnimatedGroup
               variants={{
                 container: {
                   visible: {
@@ -69,20 +69,21 @@ export default function HeroSection() {
               className="mask-b-from-35% mask-b-to-90% absolute inset-0 top-56 -z-20 lg:top-32"
             >
               <Image
-                src="/"
+                src={heroData.bgImgae.light.src}
+
                 alt="background"
                 className="hidden size-full dark:block"
                 width="3276"
                 height="4095"
               />
               <Image
-                src="/"
+                src={heroData.bgImgae.light.src}
                 alt="background"
                 className="z-2 aspect-15/8 relative size-full dark:hidden"
                 width="3276"
                 height="4095"
               />
-            </AnimatedGroup> */}
+            </AnimatedGroup>
 
             <div
               aria-hidden
@@ -145,49 +146,47 @@ export default function HeroSection() {
                     },
                     ...transitionVariants,
                   }}
-                  className="mt-12 flex flex-row items-center justify-center gap-2 sm:gap-3 md:gap-2"
+                  className="mt-12 flex w-full items-center justify-center gap-3"
                 >
-                  <div
-                    key={heroData.button1.id}
-                    className="group flex flex-1 rounded-[calc(var(--radius-sm)+0.125rem)]"
-                  >
+                  {/* Button 1 */}
+                  <div className="group flex w-full flex-1">
                     <Button
                       asChild
                       size="lg"
-                      className="relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-3 sm:px-4 md:px-5 text-xs sm:text-sm md:text-base transition-colors duration-300 hover:text-white"
+                      className="relative flex h-11 w-full flex-1 items-center justify-center overflow-hidden rounded-sm px-3 text-xs sm:px-4 sm:text-sm md:px-5 md:text-base transition-colors duration-300 hover:text-white"
                     >
                       <a href={heroData.button1.href}>
-                        <span className="relative z-10 flex items-center gap-1 sm:gap-2 md:gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
+                        <span className="relative z-10 flex items-center gap-1 sm:gap-2 md:gap-3 transition-all duration-300 group-hover:translate-x-1">
                           {heroData.button1.text}
-
-                          <ArrowUpRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:rotate-45" />
+                          <ArrowUpRight className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 transition-transform duration-300 group-hover:rotate-45" />
                         </span>
 
-                        <div className="absolute inset-y-0 left-0 h-full w-full -translate-x-full transition-transform duration-300 group-hover:translate-x-0  bg-gradient-to-r from-[var(--color-green)] to-[var(--color-orange)]"></div>
+                        <div className="absolute inset-y-0 left-0 h-full w-full -translate-x-full bg-gradient-to-r from-[var(--color-green)] to-[var(--color-orange)] transition-transform duration-300 group-hover:translate-x-0" />
                       </a>
                     </Button>
                   </div>
 
-                  <div className="group flex flex-1 rounded-[calc(var(--radius-sm)+0.125rem)]">
+                  {/* Button 2 */}
+                  <div className="group flex w-full flex-1">
                     <Button
-                      key={heroData.button2.id}
                       asChild
                       size="lg"
                       variant="outline"
-                      className="bg-background relative flex h-11 flex-1 items-center justify-center overflow-hidden rounded-sm px-3 sm:px-4 md:px-5 text-xs sm:text-sm md:text-base transition-colors duration-300 hover:text-white"
+                      className="relative flex h-11 w-full flex-1 items-center justify-center overflow-hidden rounded-sm px-3 text-xs sm:px-4 sm:text-sm md:px-5 md:text-base transition-colors duration-300 hover:text-white"
                     >
                       <a href={heroData.button2.href}>
-                        <span className="relative z-10 flex items-center gap-1 sm:gap-2 md:gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
+                        <span className="relative z-10 flex items-center gap-1 sm:gap-2 md:gap-3 transition-all duration-300 group-hover:translate-x-1">
                           {heroData.button2.text}
-
-                          <ArrowUpRight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:rotate-45" />
+                          <ArrowUpRight className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 transition-transform duration-300 group-hover:rotate-45" />
                         </span>
 
-                        <div className="absolute inset-y-0 left-0 h-full w-full -translate-x-full transition-transform duration-300 group-hover:translate-x-0  bg-gradient-to-r from-[var(--color-green)] to-[var(--color-orange)]"></div>
+                        <div className="absolute inset-y-0 left-0 h-full w-full -translate-x-full bg-gradient-to-r from-[var(--color-green)] to-[var(--color-orange)] transition-transform duration-300 group-hover:translate-x-0" />
                       </a>
                     </Button>
                   </div>
                 </AnimatedGroup>
+
+
               </div>
             </div>
 
@@ -204,7 +203,7 @@ export default function HeroSection() {
                 ...transitionVariants,
               }}
             >
-              <div className="dark:mask-b-from-55% relative -mr-4 sm:-mr-8 md:-mr-16 lg:-mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
+              <div className="dark:mask-b-from-55% relative mx-auto mt-8 overflow-hidden px-2 sm:mt-12 md:mt-20">
                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-2 sm:p-3 md:p-4 shadow-lg shadow-zinc-950/15 ring-1">
                   <Image
                     className="bg-background aspect-4/3 sm:aspect-15/8 relative hidden rounded-2xl dark:block w-full h-auto object-cover"

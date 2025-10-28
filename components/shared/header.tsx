@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll } from "motion/react";
@@ -13,15 +13,18 @@ import { Button } from "@/components/ui/button";
 export const Header = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
+  const [openDropdownIndex, setOpenDropdownIndex] = React.useState<number | null>(null);
+  const closeTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const { scrollYProgress } = useScroll();
 
   React.useEffect(() => {
     const unsubscribe = scrollYProgress.on("change", (latest) => {
       setScrolled(latest > 0.05);
+      if (menuState) setMenuState(false);
     });
     return () => unsubscribe();
-  }, [scrollYProgress]);
+  }, [scrollYProgress, menuState]);
 
   return (
     <header>
@@ -55,13 +58,53 @@ export const Header = () => {
               <div className="hidden lg:block">
                 <ul className="flex gap-8 text-sm">
                   {Navigation.map((item, index) => (
-                    <li key={index}>
-                      <Link
-                        href={item.href}
-                        className="font-normal hover:text-brand block duration-150"
-                      >
-                        <span>{item.label}</span>
-                      </Link>
+                    <li
+                      key={index}
+                      className="relative"
+                      onMouseEnter={() => {
+                        if (closeTimer.current) clearTimeout(closeTimer.current);
+                        setOpenDropdownIndex(index);
+                      }}
+                      onMouseLeave={() => {
+                        if (closeTimer.current) clearTimeout(closeTimer.current);
+                        closeTimer.current = setTimeout(() => setOpenDropdownIndex(null), 150);
+                      }}
+                      onFocusCapture={() => setOpenDropdownIndex(index)}
+                      onBlurCapture={() => {
+                        if (closeTimer.current) clearTimeout(closeTimer.current);
+                        closeTimer.current = setTimeout(() => setOpenDropdownIndex(null), 150);
+                      }}
+                    >
+                      <div className="flex items-center gap-1">
+                        <Link
+                          href={item.href}
+                          className="font-normal hover:text-brand block duration-150"
+                        >
+                          <span>{item.label}</span>
+                        </Link>
+                        {item.dropdown && (
+                          <ChevronDown
+                            className={cn(
+                              "size-4 text-muted-foreground transition-transform duration-150",
+                              openDropdownIndex === index && "rotate-180"
+                            )}
+                          />
+                        )}
+                      </div>
+                      {item.dropdown && openDropdownIndex === index && (
+                        <ul className="absolute left-0 top-full z-30 w-56 rounded-md border bg-background p-2 shadow-xl">
+                          {item.dropdown.map((sub, subIndex) => (
+                            <li key={subIndex}>
+                              <Link
+                                href={sub.href}
+                                className="block rounded px-3 py-2 text-sm hover:bg-accent hover:text-accent-foreground"
+                              >
+                                {sub.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -76,9 +119,25 @@ export const Header = () => {
                       <Link
                         href={item.href}
                         className="text-foreground hover:text-accent-foreground block duration-150"
+                        onClick={() => setMenuState(false)}
                       >
                         <span>{item.label}</span>
                       </Link>
+                      {item.dropdown && (
+                        <ul className="mt-2 ml-4 space-y-3">
+                          {item.dropdown.map((sub, subIndex) => (
+                            <li key={subIndex}>
+                              <Link
+                                href={sub.href}
+                                className="block text-muted-foreground hover:text-foreground duration-150"
+                                onClick={() => setMenuState(false)}
+                              >
+                                {sub.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
                   ))}
                 </ul>
