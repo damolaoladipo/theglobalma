@@ -10,13 +10,13 @@
         {
             name: 'Elijah Jones',
             role: 'Co-Founder - CTO',
-            avatar: 'blocks/thema.png',
+            avatar: 'blocks/placeholder.png',
             link: '#',
         },
         {
             name: 'Isabella Garcia',
             role: 'Sales Manager',
-            avatar: 'blocks/thema.png',
+            avatar: 'blocks/placeholder.png',
             link: '#',
         },
     ]
@@ -30,7 +30,11 @@
                             <h2 className="text-3xl font-bold sm:text-4xl">Board Members</h2>
                         </div>
                         <div className="mt-6 sm:mt-0">
-                            <p>During the working process, we perform regular fitting with the client because he is the only person who can feel whether a new suit fits or not.</p>
+                            <p>Our board is made up of visionary leaders, entrepreneurs, and
+        professionals who bring years of experience across technology,
+        business, and community development. Together, they guide our mission,
+        uphold our values, and ensure that every decision drives sustainable
+        impact.</p>
                         </div>
                     </div>
                     <div className="mt-12 md:mt-24">
@@ -57,7 +61,7 @@
                                                 href={member.link}
                                                 className="group-hover:text-primary-600 dark:group-hover:text-primary-400 inline-block translate-y-8 text-sm tracking-wide opacity-0 transition-all duration-500 hover:underline group-hover:translate-y-0 group-hover:opacity-100">
                                                 {' '}
-                                                Instagram
+                                                Linkedin
                                             </Link>
                                         </div>
                                     </div>

@@ -84,13 +84,13 @@ export const AboutUsData: AboutUsData = {
     ]
   },
   contact: {
-    email: "hello@theglobalma.com",
+    email: "hello@theglobalma.org",
     tagline: "Reach: Engaged 2,000+ individuals across communities in Alberta, British Columbia, Saskatchewan, and Manitoba through entrepreneurship, networking, and cultural integration initiatives."
   },
   testimonial: {
-    quote: "This platform completely changed my career. I went from learning to code at home to landing a full-time role as a software engineer in less than a year!",
-    author: "Participant",
-    role: "Graduate"
+    quote: "Through TheglobalMA, I now support locsl businesses in Canada while growing my global client base",
+    author: "Samson Oladipo",
+    role: ""
   },
   button: {
     id: "01",

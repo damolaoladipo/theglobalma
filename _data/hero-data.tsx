@@ -1,16 +1,16 @@
 export const heroData = {
   heading: "Innovation Beyond Borders",
   badge: "Introducing: Bridgit Accelerator",
-    subheading: "Your hub for entrepreneurship, mentorship, and impact-driven projects—building bold ideas and transforming communities.",
+    subheading: "Your hub for entrepreneurship, workforce development, and impact-driven projects—catalyzing bold ideas and transforming communities.",
   mockup: {
     light: {
-      src: "/items/young.png",
+      src: "/items/talk.png",
       alt: "hero image",
       width: 2700,
       height: 1440,
     },
     dark: {
-      src: "/items/young.png",
+      src: "/items/talk.png",
       alt: "hero image",
       width: 2700,
       height: 1440,

@@ -27,8 +27,8 @@ const Logo = (data: ILogo) => {
     return null;
   }
 
-  const imageSrc =
-    theme === "dark" ? "blocks/theglobalma.svg" : "blocks/theglobalma.svg";
+  // Use absolute path so the image resolves on any route (including not-found pages)
+  const imageSrc = "/blocks/theglobalma.svg";
 
   // Only pass valid div props (filter out any props not valid for div)
   const divProps: React.HTMLAttributes<HTMLDivElement> = {};

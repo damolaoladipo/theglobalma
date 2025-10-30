@@ -1,12 +1,12 @@
 export const siteConfig = {
   name: "theglobalma - the possibilities are endless",
   title: "theglobalma",
-  url: "https://www.theglobalma.com",
-  getStartedUrl: "https://www.theglobalma.com",
+  url: "https://www.theglobalma.org",
+  getStartedUrl: "https://www.theglobalma.org",
   ogImage: "/blocks/og-image.png",
   products: {
     name: "lens",
-    url: "https://lens.theglobalma.com",
+    url: "https://lens.theglobalma.org",
     docs: "https://github.com/theglobalma"
   },
   description:
@@ -17,7 +17,7 @@ export const siteConfig = {
     instagram: "https://instagram.com/theglobalma",
     linkedin: "https://linkedin.com/company/theglobalma",
     github: "https://github.com/theglobalma",
-    email: "mailto:hello@theglobalma.com",
+    email: "mailto:hello@theglobalma.org",
   },
   contact: {
     telephone: "+15873707614",

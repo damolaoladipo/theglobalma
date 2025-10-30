@@ -6,7 +6,7 @@ export const footerData = {
     bio: "The Global MA. Where innovation meets impact. Your journey to greatness begins here!",
     address: "",
     telephone: "",
-    email: "Email: hello@theglobalma.com",
+    email: "Email: hello@theglobalma.org",
     buitBy: "Made with ❤️ by Damola",
     copyright: ". All rights reserved.",
     ownedBy: "The Global MA",

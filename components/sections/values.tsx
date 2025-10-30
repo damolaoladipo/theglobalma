@@ -1,62 +1,64 @@
 "use client";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
+import { 
+    Users, 
+    Target, 
+    Heart, 
+    Handshake, 
+} from 'lucide-react'
+import { ValuesData, ValueSectionData } from '@/_data/values'
 
-interface ValuesSectionProps {
-  className?: string;
+// Icon mapping for dynamic icon rendering
+const iconMap = {
+    Users,
+    Target,
+    Heart,
+    Handshake
 }
 
-const items = [
-  {
-    title: "Vision",
-    description:
-      "To be a catalyst for innovative change, empowering people and communities to thrive through purpose-driven initiatives.",
-  },
-  {
-    title: "Mission",
-    description:
-      "We connect ideas, people, and opportunities—designing programs, mentorship, and partnerships that translate potential into measurable impact.",
-  },
-  {
-    title: "Core Values",
-    description:
-      "Integrity, Collaboration, Inclusion, Excellence, and Impact—guiding every relationship, decision, and outcome.",
-  },
-  {
-    title: "Goals",
-    description:
-      "Scale programs, deepen community engagement, and build sustainable ecosystems that unlock growth for newcomers and entrepreneurs.",
-  },
-];
+export default function ValuesSection() {
+    return (
+        <section className="py-12 md:py-20 bg-neutral-100 dark:bg-neutral-900 from-background to-muted/20">
+            <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-16">
+                <div className="relative z-10 mx-auto max-w-3xl space-y-6 text-center md:space-y-8">
+                    <h2 className="text-balance text-4xl font-medium lg:text-5xl bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+                        {ValueSectionData.heading}
+                    </h2>
+                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                        {ValueSectionData.subheading}
+                    </p>
+                </div>
 
-export default function ValuesSection({ className }: ValuesSectionProps) {
-  return (
-    <section className="bg-neutral-100 dark:bg-neutral-900">
-      <div className={cn("mx-auto max-w-5xl px-6 py-16 md:py-24", className)}>
-        <div className="mb-10 text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          Our Mission and Vision
-        </h2>
-        <p className="mt-3 text-base text-muted-foreground sm:text-lg">
-          What drives our work and the outcomes we strive to achieve.
-        </p>
-        </div>
-
-        <div className="grid gap-6 sm:grid-cols-2">
-          {items.map((item) => (
-            <Card key={item.title}>
-              <CardHeader>
-                <CardTitle className="text-xl">{item.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{item.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+                <div className="relative mx-auto grid max-w-5xl gap-6 sm:grid-cols-2">
+                    {ValuesData.map((value) => {
+                        const IconComponent = iconMap[value.icon as keyof typeof iconMap]
+                        return (
+                            <div 
+                                key={value.id}
+                                className="group relative overflow-hidden rounded-xl border bg-card/50 p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-primary/20 hover:bg-card/80"
+                            >
+                                <div className="space-y-4">
+                                    <div className="flex items-center gap-3">
+                                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
+                                            <IconComponent className="size-5" />
+                                        </div>
+                                        <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                                            {value.title}
+                                        </h3>
+                                    </div>
+                                    <p className="text-sm text-muted-foreground leading-relaxed">
+                                        {value.description}
+                                    </p>
+                                </div>
+                                
+                                {/* Subtle gradient overlay for depth */}
+                                <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 transition-opacity group-hover:opacity-100" />
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+        </section>
+    );
 }
 
 
