@@ -47,8 +47,8 @@ export const ProgramsData: Program[] = [
     },
     button1: {
       id: "01",
-      href: "/apply-now",
-      text: "Apply Now",
+      href: "/learn-more",
+      text: "Learn More",
       variant: "default" as const,
     },
     button2: {
@@ -103,8 +103,8 @@ export const ProgramsData: Program[] = [
 
     button1: {
       id: "01",
-      href: "/apply-now",
-      text: "Apply Now",
+      href: "/learn-more",
+      text: "Learn More",
       variant: "default" as const,
     },
     button2: {
@@ -294,7 +294,7 @@ export const ProgramsSection = {
       description:
         "BridgIT is a 6-week immersive program designed to prepare high schoolers for the IT market. The program is a community project that aims to provide practical training to students in the fields of UI/UX design and Coding. By providing hands-on projects and assignments, experienced instructors, and real-world scenarios, BridgIT will help students develop the skills and knowledge needed to excel in these in-demand careers.",
       cta: {
-        label: "Apply now",
+        label: "Learn more",
         link: "/programs/bridgit-accelerator",
       },
     },
