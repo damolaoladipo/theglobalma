@@ -93,12 +93,14 @@ export default function Footer() {
 
         <div className="md:mt32 mt-10 flex flex-col items-start justify-between gap-6 border-t border-neutral-800 pt-8 sm:flex-row">
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-neutral-800 dark:text-neutral-200">
+            <Link href='https://damolaoladipo.com'>
             <p className="text-sm"> {brand.buitBy}</p>
+            </Link>
           </div>
           <p className="text-sm">
             &copy; {currentYear}{" "}
             <a
-              href="https://github.com/damolaoladipo"
+              href=""
               className="transition-colors hover:text-[#a3f443]"
             >
               {brand.ownedBy}
