@@ -9,6 +9,12 @@ import Partners from "@/components/sections/partners";
 import UpcomingEvents from "@/components/upcoming";
 
 
+export const metadata = {
+  title: "Home | ThelobalMA",
+  description: "Empowers future innovators through workforce development, technology upskilling, and entrepreneurship training.",
+};
+
+
 const Home = () => {
   return (
     <main className="min-h-screen w-full overflow-hidden bg-green text-foreground">

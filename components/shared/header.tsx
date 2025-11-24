@@ -32,7 +32,7 @@ export const Header = () => {
         data-state={menuState && "active"}
         className={cn(
           "fixed z-20 w-full transition-colors duration-150",
-          scrolled && "bg-background/50 backdrop-blur-3xl"
+          scrolled && "bg-background"
         )}
       >
         <div className="mx-auto max-w-5xl items-center justify-center px-6 transition-all duration-300">
@@ -78,7 +78,7 @@ export const Header = () => {
                       <div className="flex items-center gap-1">
                         <Link
                           href={item.href}
-                          className="font-normal hover:text-brand block duration-150"
+                          className="font-normal hover:text-blue-500 block duration-150"
                         >
                           <span>{item.label}</span>
                         </Link>
@@ -97,7 +97,7 @@ export const Header = () => {
                             <li key={subIndex}>
                               <Link
                                 href={sub.href}
-                                className="block rounded px-3 py-2 text-sm hover:bg-accent hover:text-accent-foreground"
+                                className="block rounded px-3 py-2 text-sm hover:bg-blue-500 hover:text-blue-500"
                               >
                                 {sub.label}
                               </Link>
@@ -118,7 +118,7 @@ export const Header = () => {
                     <li key={index}>
                       <Link
                         href={item.href}
-                        className="text-foreground hover:text-accent-foreground block duration-150"
+                        className="text-foreground hover:text-blue-500 block duration-150"
                         onClick={() => setMenuState(false)}
                       >
                         <span>{item.label}</span>

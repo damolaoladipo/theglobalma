@@ -13,13 +13,7 @@ export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.getStartedUrl),
-  keywords: [
-    "theglobalma",
-    "Product Management",
-    "Software Engineering",
-    "Data Science",
-    "Open Source Contribution",
-  ],
+  keywords: siteConfig.keywords,
   authors: [
     {
       name: siteConfig.title,
@@ -63,15 +57,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${useFont.variable} antialiased`} suppressHydrationWarning>
+      <body
+        className={`${useFont.variable} antialiased`}
+        suppressHydrationWarning
+      >
         <AppThemeProvider>
-          
           <Header />
 
-              {children}
+          {children}
 
           <Footer />
-          
         </AppThemeProvider>
 
         <Analytics />

@@ -44,7 +44,7 @@ export const footerData = {
   about: {
     group: "About",
     items: [
-      { href: "/about-us", label: "About Us" },
+      { href: "/about", label: "About Us" },
       { href: "/programs", label: "Programs" },
       { href: "/contact", label: "Contact" },
     ],

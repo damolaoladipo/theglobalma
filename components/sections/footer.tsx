@@ -63,7 +63,7 @@ export default function Footer() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm  transition-colors hover:text-brand-foreground"
+                      className="text-sm  transition-colors hover:text-blue-500"
                     >
                       {item.label}
                     </a>
@@ -80,7 +80,7 @@ export default function Footer() {
                   <li key={index}>
                     <a
                       href={item.href}
-                      className="text-sm transition-colors hover:text-brand-foreground"
+                      className="text-sm transition-colors hover:text-blue-500"
                     >
                       {item.label}
                     </a>
@@ -94,14 +94,14 @@ export default function Footer() {
         <div className="md:mt32 mt-10 flex flex-col items-start justify-between gap-6 border-t border-neutral-800 pt-8 sm:flex-row">
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-neutral-800 dark:text-neutral-200">
             <Link href='https://damolaoladipo.com'>
-            <p className="text-sm"> {brand.buitBy}</p>
+            <p className="text-sm hover:underline"> {brand.buitBy}</p>
             </Link>
           </div>
           <p className="text-sm">
             &copy; {currentYear}{" "}
             <a
               href=""
-              className="transition-colors hover:text-[#a3f443]"
+              className="transition-colors hover:text-blue-400"
             >
               {brand.ownedBy}
             </a>

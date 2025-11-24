@@ -5,6 +5,12 @@ import { AboutUsData } from "@/_data/about-us";
 import BoardSection from "@/components/sections/board";
 import ValuesSection from "@/components/sections/values";
 
+
+export const metadata = {
+  title: "About Us | TheGlobalMA",
+  description: "Learn more about our mission and team.",
+};
+
 export default function About() {
   return (
     <>
@@ -77,7 +83,7 @@ export default function About() {
                     {AboutUsData.testimonial.quote}
                   </p>
                   <footer className="mt-2 text-sm font-medium text-foreground">
-                    — {AboutUsData.testimonial.author}, {AboutUsData.testimonial.role}
+                    — {AboutUsData.testimonial.author} {AboutUsData.testimonial.role}
                   </footer>
                 </blockquote>
 

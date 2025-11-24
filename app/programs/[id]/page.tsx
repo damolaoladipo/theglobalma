@@ -1,5 +1,3 @@
-"use client";
-
 import { Suspense } from "react";
 import * as Icons from "lucide-react";
 import React from "react";
@@ -9,6 +7,33 @@ import { TextEffect } from "@/components/ui/text-effect";
 import Image from "next/image";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { Transition } from "motion/react";
+import { Metadata, ResolvingMetadata } from "next";
+
+type ParamsType = {
+  params: {
+    id: string;
+  };
+};
+
+export async function generateMetadata(
+  { params }: ParamsType,
+  _parent: ResolvingMetadata
+): Promise<Metadata> {
+  
+  const { id } = await params;
+
+  // Optional: pull data from your ProgramsData array
+  const program = ProgramsData.find((p) => p.id === id);
+
+  return {
+    title: program
+      ? `${program.heading} | The Global MA`
+      : `${id} | The Global MA`,
+    description: program
+      ? program.subheading
+      : `Learn more about the ${id} program at The Global MA.`,
+  };
+}
 
 const springTransition: Transition = {
   type: "spring",
@@ -32,11 +57,7 @@ const transitionVariants = {
   },
 };
 
-// This is the component that uses the hook.
-function ProgramComponent({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = React.use(params);
-  const { id } = resolvedParams;
-
+function ProgramComponent({ id }: { id: string }) {
   const program = ProgramsData.find((p) => p.id === id);
 
   if (!program) {
@@ -95,7 +116,6 @@ function ProgramComponent({ params }: { params: Promise<{ id: string }> }) {
                   <a href={program.button1.href}>
                     <span className="relative z-10 flex items-center gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
                       {program.button1.text}
-
                       <Icons.ArrowUpRight className="transition-transform duration-300 group-hover:rotate-45" />
                     </span>
 
@@ -115,7 +135,6 @@ function ProgramComponent({ params }: { params: Promise<{ id: string }> }) {
                   <a href={program.button2?.href}>
                     <span className="relative z-10 flex items-center gap-3 text-nowrap transition-all duration-300 group-hover:translate-x-1">
                       {program.button2?.text}
-
                       <Icons.ArrowUpRight className="transition-transform duration-300 group-hover:rotate-45" />
                     </span>
 
@@ -134,6 +153,7 @@ function ProgramComponent({ params }: { params: Promise<{ id: string }> }) {
               (Icons as unknown as Record<string, React.ElementType>)[
                 feature.icon
               ] || Icons.Zap;
+
             return (
               <div key={feature.id} className="space-y-3">
                 <div className="flex items-center gap-2">
@@ -162,15 +182,13 @@ function ProgramComponent({ params }: { params: Promise<{ id: string }> }) {
   );
 }
 
-// Wrap your component in a Suspense boundary for the export.
-export default function Program({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+export default async function Program({ params }: { params: { id: string } }) {
+
+  const { id } = await params
+
   return (
     <Suspense fallback={<div>Loading program details...</div>}>
-      <ProgramComponent params={params} />
+      <ProgramComponent id={id} />
     </Suspense>
   );
 }
