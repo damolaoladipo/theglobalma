@@ -88,7 +88,7 @@ export const AboutUsData: AboutUsData = {
     tagline: "Reach: Engaged 2,000+ individuals across communities in Alberta, British Columbia, Saskatchewan, and Manitoba through entrepreneurship, networking, and cultural integration initiatives."
   },
   testimonial: {
-    quote: "Through TheglobalMA, I now support locsl businesses in Canada while growing my global client base",
+    quote: "Through TheglobalMA, I now support local businesses in Canada while growing my global client base",
     author: "Samson Oladipo",
     role: ""
   },

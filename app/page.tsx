@@ -5,7 +5,7 @@ import AboutUs from "@/components/sections/about-us";
 import CallToAction from "@/components/sections/cta";
 import HeroSection from "@/components/sections/hero-section";
 import ImpactHighlights from "@/components/sections/imapact";
-import Partners from "@/components/sections/partners";
+// import Partners from "@/components/sections/partners";
 import UpcomingEvents from "@/components/upcoming";
 
 
@@ -21,7 +21,7 @@ const Home = () => {
 
 
       <HeroSection />
-      <Partners />
+      {/* <Partners /> */}
       <UpcomingEvents />
       <ImpactHighlights />
       {/* <TabsDemo /> */}
