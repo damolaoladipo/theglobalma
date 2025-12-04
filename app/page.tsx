@@ -10,7 +10,7 @@ import UpcomingEvents from "@/components/upcoming";
 
 
 export const metadata = {
-  title: "Home | ThelobalMA",
+  title: "Home | TheglobalMA",
   description: "Empowers future innovators through workforce development, technology upskilling, and entrepreneurship training.",
 };
 

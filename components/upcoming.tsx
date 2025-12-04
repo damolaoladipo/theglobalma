@@ -1,6 +1,7 @@
 import { BookOpen, Target } from 'lucide-react'
 import Image from 'next/image'
 import { upcomingEventsData } from '../_data/upcoming-events'
+import Link from 'next/link'
 
 export default function UpcomingEvents() {
     const { badge, heading, description, features, cta, image } = upcomingEventsData
@@ -41,9 +42,14 @@ export default function UpcomingEvents() {
                         </div>
                         
                         <div className="pt-6">
-                            <button className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-lg hover:shadow-xl">
+
+                            <Link href={cta.href} target="_blank" rel="noopener noreferrer">
+                               <button className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 shadow-lg hover:shadow-xl">
                                 {cta.text}
                             </button>
+                            
+                            </Link>
+                         
                         </div>
                     </div>
                     <div className="relative mt-6 sm:mt-0">
